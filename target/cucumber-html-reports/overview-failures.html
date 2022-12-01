@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>KarateBaseFramework</td>
-      <td>25 nov. 2022, 11:18</td>
+      <td>01 d&eacute;c. 2022, 15:53</td>
     </tr>
   </tbody>
 </table>
@@ -115,24 +115,24 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_401982252.html">tests/simpleBooksv1.feature</a>
+      <a href="report-feature_3823338033.html">tests/simpleBooks.feature</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_2210141207.html">@tag2</a>
+       <a href="report-tag_2210141206.html">@tag1</a>
 </div>
 
 
-  <span class="lead-duration duration">3.373</span>
+  <span class="lead-duration duration">0.840</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">verify the successful creation of an order with an available book</span>
+  <span class="name">get orders</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -164,47 +164,6 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def doStorage =</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details">
-        <pre>function(args) {
-    var DataStorage = Java.type('helpers.DataStorage');
-    var dS = new DataStorage();
-    return dS.read(args);
-}</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path 'orders'</span>
@@ -232,65 +191,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def result = call doStorage 'key'</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">header Authorization = 'Bearer '+ result</span>
+  <span class="name">header Authorization = 'Bearer '+ token</span>
 
-  <span class="lead-duration duration">0.011</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">request</span>
-
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -302,19 +207,6 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>{
-  &quot;bookId&quot;: 1,
-  &quot;customerName&quot;: &quot;John&quot;
-}</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -328,9 +220,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">method post</span>
+  <span class="name">method get</span>
 
-  <span class="lead-duration duration">3.342</span>
+  <span class="lead-duration duration">0.829</span>
 
 </div>
 
@@ -344,24 +236,22 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
           <a>Doc string</a>
       </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>11:18:40.366 request:
-1 &gt; POST https://simple-books-api.glitch.me/orders
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>15:53:42.065 request:
+1 &gt; GET https://simple-books-api.glitch.me/orders
 1 &gt; Authorization: Bearer null
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 34
 1 &gt; Host: simple-books-api.glitch.me
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;bookId&quot;:1,&quot;customerName&quot;:&quot;John&quot;}
 
-11:18:43.459 response time in milliseconds: 3093
+
+15:53:42.892 response time in milliseconds: 827
 1 &lt; 401
-1 &lt; Date: Fri, 25 Nov 2022 10:18:34 GMT
+1 &lt; Date: Thu, 01 Dec 2022 14:53:37 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 33
 1 &lt; Connection: keep-alive
@@ -386,7 +276,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">status 201</span>
+  <span class="name">status 200</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -399,13 +289,13 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
           <a>status</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>status code was: 401, expected: 201, response time in milliseconds: 3093, url: https://simple-books-api.glitch.me/orders, response: 
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>status code was: 401, expected: 200, response time in milliseconds: 827, url: https://simple-books-api.glitch.me/orders, response: 
 {&quot;error&quot;:&quot;Invalid bearer token.&quot;}
-classpath:tests/simpleBooksv1.feature:69</pre>
+classpath:tests/simpleBooks.feature:78</pre>
       </div>
     </div>
   </div>
@@ -415,46 +305,19 @@ classpath:tests/simpleBooksv1.feature:69</pre>
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
           <a>Doc string</a>
       </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>11:18:43.461 classpath:tests/simpleBooksv1.feature:69
-Then status 201
-status code was: 401, expected: 201, response time in milliseconds: 3093, url: https://simple-books-api.glitch.me/orders, response: 
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>15:53:42.894 classpath:tests/simpleBooks.feature:78
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 827, url: https://simple-books-api.glitch.me/orders, response: 
 {&quot;error&quot;:&quot;Invalid bearer token.&quot;}
-classpath:tests/simpleBooksv1.feature:69
+classpath:tests/simpleBooks.feature:78
 </pre>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
 
 
 

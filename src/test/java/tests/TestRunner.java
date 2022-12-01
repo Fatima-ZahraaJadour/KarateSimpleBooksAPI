@@ -13,19 +13,21 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 //run this project in jenkins(sqli gitlab) + build with parametrs (tag)
 public class TestRunner {
-    @Karate.Test
+    /*@Karate.Test
     Karate testAPI() {
         return Karate.run("simpleBooks").outputCucumberJson(true).outputHtmlReport(true).relativeTo(getClass());
-    }
+    }*/
     //run the test and generating html report
-    /*@Karate.Test
+    @Karate.Test
     public void testParallel() {
         Results results = Runner.path("classpath:tests").outputCucumberJson(true).outputHtmlReport(true).parallel(3);
         generateReport(results.getReportDir());
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
-    }*/
+    }
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] {"json"}, true);
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
