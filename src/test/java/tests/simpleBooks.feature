@@ -38,7 +38,7 @@ Feature: Simple Books API
       * def getFeature = call read('getAllBooks.feature')
       * def books = getFeature.response
       * def id = get[0] books[?(@.available==true)].id
-      * def result = call write {'id': 5}
+      * def result = call write {'id': #(id)}
       # i did this in a separate scenario cuz in the same scenario reading the value gives 0
 
   Scenario: verify the successful creation of an order with an available book
